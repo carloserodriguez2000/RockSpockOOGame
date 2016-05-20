@@ -6,27 +6,28 @@ class Game:
     def ___init___(self):
         # do someting
         i=0
-
+        # self.player1 = None
         
     def playGame(self):
-        self.player1 = self.getNewPlayer()
-        self.player2 = self.getNewPlayer()  # instance of player an store name
-        self.scoreBoard = ScoreBoard(self.player1,self.player2)
-       
+        print ("                     WELCOME PLAYERS!")
+        print ("                   Let's play a game!\n")
+        player1 = self.getNewPlayer()
+        player2 = self.getNewPlayer()  # instance of player an store name
+        self.scoreBoard = ScoreBoard(player1,player2)
        
         while self.continueGame() == True:
-            self.takeTurn(self.player1)
-            self.takeTurn(self.player2)
-            name = self.checkWinner ( self.player1, self.player2)
-            self.scoreBoard.storeScore(name)
-            self.scoreBoard.printWinner ( player1, player2)
+            self.takeTurn(player1)
+            self.takeTurn(player2)
+            name = self.checkWinner ( player1, player2)
+            self.scoreBoard.storeScore(name, player1, player2)
+            self.scoreBoard.printRoundWinner ( name, player1, player2)
         
-        self.scoreBoard.gameWinner(self.player1,self.player2)
+        self.scoreBoard.gameWinner(player1,player2)
         return False
             
     
     def continueGame(self):
-        continueFlag = input('Do you want another round?y/n: ')
+        continueFlag = input('                     Do you want a round?y/n: ')
         continueFlag= continueFlag.lower()
         if continueFlag == 'y' :
             return True
@@ -36,7 +37,7 @@ class Game:
         
     def takeTurn(self, player):
         #DO SOMETHING
-        player.takeTurn( player)
+        player.takeTurn(player)
         return
    
     def getNewPlayer(self):
@@ -68,16 +69,16 @@ class Game:
         if(player1Choice == player2Choice):
             theWinner = ''
         elif(player1Choice == 'SCISSOR' and (player2!='ROCK'    or player2!='SPOCK')) :
-            theWinner = self.player1.name
+            theWinner = player1.name
         elif (player1Choice=='PAPER'    and (player2!='SCISSOR' or player2!='LIZZARD')) :
-            theWinner = self.player1.name
+            theWinner = player1.name
         elif (player1Choice=='ROCK'     and (player2!='PAPER'   or player2!='SPOCK')) :
-            theWinner = self.player1.name
+            theWinner = player1.name
         elif (player1Choice=='LIZZARD'  and (player2!='ROCK'    or player2!='SCISSOR')) :
-            theWinner = self.player1.name
+            theWinner = player1.name
         elif (player1Choice=='SPOCK'    and (player2!='SCISSOR' or player2!='PAPER')) :
-            theWinner = self.player1.name
+            theWinner = player1.name
         else :
-            theWinner = self.player2.name
+            theWinner = player2.name
       
         return theWinner

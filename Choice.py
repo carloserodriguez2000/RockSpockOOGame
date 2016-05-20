@@ -6,12 +6,19 @@ class Choice:
            
     def validChoice(self, playerChoice):
         result = playerChoice in self.choices
-        print ( playerChoice)
-        print ( result)
-        return playerChoice in self.choices
+        # print ( playerChoice)
+        # print ( result)
+        return result
     
     def getChoice(self, playerName):
-        choice = input("%s enter your choice" % (playerName))
-        choice = choice.upper()
-        if ( self.validChoice(choice) == True):
-            return choice
+        validFlag = False
+        while validFlag == False:
+            choice = input("%s     Enter your choice!:  " % (playerName))
+            choice = choice.upper()
+            if ( self.validChoice(choice) == True):
+                print("%s    your choice is!: %s \n" % (playerName, choice))
+                print( choice, ' is a great choice.\n')
+                validFlag = True
+            else:
+                validFlag = False
+        return choice            

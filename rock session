@@ -1,0 +1,12 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="3">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="640" startPos="0" endPos="0" selMode="0" lang="Python" encoding="-1" filename="C:\Users\USER\Documents\GitRepos\RockSpockOOGame\main.py" backupFilePath="" originalFileLastModifTimestamp="1463697663" />
+            <File firstVisibleLine="49" xOffset="0" scrollWidth="960" startPos="1607" endPos="1607" selMode="0" lang="Python" encoding="-1" filename="C:\Users\USER\Documents\GitRepos\RockSpockOOGame\Game.py" backupFilePath="" originalFileLastModifTimestamp="1463758793" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="744" startPos="187" endPos="187" selMode="0" lang="Python" encoding="-1" filename="C:\Users\USER\Documents\GitRepos\RockSpockOOGame\ScoreBoard.py" backupFilePath="" originalFileLastModifTimestamp="1463761099" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="520" startPos="406" endPos="406" selMode="0" lang="Python" encoding="-1" filename="C:\Users\USER\Documents\GitRepos\RockSpockOOGame\Player.py" backupFilePath="" originalFileLastModifTimestamp="1463761190" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="656" startPos="287" endPos="287" selMode="0" lang="Python" encoding="-1" filename="C:\Users\USER\Documents\GitRepos\RockSpockOOGame\Choice.py" backupFilePath="" originalFileLastModifTimestamp="1463717082" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
