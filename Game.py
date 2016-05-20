@@ -68,15 +68,15 @@ class Game:
         
         if(player1Choice == player2Choice):
             theWinner = ''
-        elif(player1Choice == 'SCISSOR' and (player2!='ROCK'    or player2!='SPOCK')) :
+        elif(player1Choice == 'SCISSOR' and (player2Choice=='PAPER'    or player2Choice=='LIZZARD')) :
             theWinner = player1.name
-        elif (player1Choice=='PAPER'    and (player2!='SCISSOR' or player2!='LIZZARD')) :
+        elif (player1Choice=='PAPER'    and (player2Choice=='ROCK' or player2=='SPOCK')) :
             theWinner = player1.name
-        elif (player1Choice=='ROCK'     and (player2!='PAPER'   or player2!='SPOCK')) :
+        elif (player1Choice=='ROCK'     and (player2Choice=='LIZZARD'   or player2Choice=='SCISSOR')) :
             theWinner = player1.name
-        elif (player1Choice=='LIZZARD'  and (player2!='ROCK'    or player2!='SCISSOR')) :
+        elif (player1Choice=='LIZZARD'  and (player2Choice=='PAPER'    or player2Choice=='SPOCK')) :
             theWinner = player1.name
-        elif (player1Choice=='SPOCK'    and (player2!='SCISSOR' or player2!='PAPER')) :
+        elif (player1Choice=='SPOCK'    and (player2Choice=='SCISSOR' or player2Choice=='ROCK')) :
             theWinner = player1.name
         else :
             theWinner = player2.name
